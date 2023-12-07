@@ -1,4 +1,4 @@
-package com.github.LHMStudis.DidacticGuacamole;
+package main.java.com.github.LHMStudis.DidacticGuacamole;
 
 import java.util.Scanner;
 
@@ -12,23 +12,23 @@ public class ConsoleHandler {
 	Scanner scanner = new Scanner(System.in);
 
 	public ConsoleHandler() {
-		this.output(OutputText.heading);
+		this.printToConsole(OutputText.heading);
 	}
 
 	public String input() {
 		return this.scanner.nextLine();
 	}
 
-	public void output(String text) {
+	public void printToConsole(String text) {
 		System.out.println(text);
 	}
 
 	public String inputCode() {
-		this.output(OutputText.inputRequest);
+		this.printToConsole(OutputText.inputRequest);
 		String codeInput = this.input().trim();
-		this.output(OutputText.inputSuccess);
+		this.printToConsole(OutputText.inputSuccess);
 		if (codeInput.isEmpty()) {
-			this.output(OutputText.inputEmpty);
+			this.printToConsole(OutputText.inputEmpty);
 			this.inputCode();
 		}
 		return codeInput;

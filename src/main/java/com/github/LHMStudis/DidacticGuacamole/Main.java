@@ -1,4 +1,4 @@
-package com.github.LHMStudis.DidacticGuacamole;
+package main.java.com.github.LHMStudis.DidacticGuacamole;
 
 /**
  * DidacticGuacamole
